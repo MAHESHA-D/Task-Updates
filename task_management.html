@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <title>Task Management</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    
+<div id="task_background">
+<div id="container">
+    <div id="user"></div>
+    <input type="text" id="TaskInput" placeholder="Enter task name">
+    <label> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none" id="circle">
+            <g opacity="0.6">
+            <circle cx="19.5" cy="19.5" r="19" fill="white"/>
+            <circle cx="19.5" cy="19.5" r="19" stroke="black" stroke-dasharray="10 10"/>
+            <circle cx="19.5" cy="19.5" r="19" stroke="black" stroke-opacity="0.2" stroke-dasharray="10 10"/>
+            </g>
+            </svg>
+          <input type="datetime-local" id="calender">
+          <!-- <div class="row">
+            <div class="col-lg-5">
+              <div data-coreui-input-read-only="true" data-coreui-locale="en-US" data-coreui-toggle="date-range-picker"></div>
+            </div>
+          </div> -->
+    </label>
+    <!-- <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+
+<script>
+
+</script> -->
+      <button onclick="addTask()" id="Add_btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_47_120)">
+            <path d="M10.5 20C10.5 20.3978 10.658 20.7794 10.9393 21.0607C11.2206 21.342 11.6022 21.5 12 21.5C12.3978 21.5 12.7794 21.342 13.0607 21.0607C13.342 20.7794 13.5 20.3978 13.5 20V13.5H20C20.3978 13.5 20.7794 13.342 21.0607 13.0607C21.342 12.7794 21.5 12.3978 21.5 12C21.5 11.6022 21.342 11.2206 21.0607 10.9393C20.7794 10.658 20.3978 10.5 20 10.5H13.5V4C13.5 3.60218 13.342 3.22064 13.0607 2.93934C12.7794 2.65804 12.3978 2.5 12 2.5C11.6022 2.5 11.2206 2.65804 10.9393 2.93934C10.658 3.22064 10.5 3.60218 10.5 4V10.5H4C3.60218 10.5 3.22064 10.658 2.93934 10.9393C2.65804 11.2206 2.5 11.6022 2.5 12C2.5 12.3978 2.65804 12.7794 2.93934 13.0607C3.22064 13.342 3.60218 13.5 4 13.5H10.5V20Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_47_120">
+            <rect width="24" height="24" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg> Add a Task 
+      </button> 
+       <label id="task_label"> 
+        <!-- <span style="color: indigo;" id="t"> -->
+        Task details </label>
+    <!-- </span> -->
+       <input type="text" placeholder="Search" id="search">
+       <button id="filter">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="25px" width="20px" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M6 10.5a.5.5 0 01.5-.5h3a.5.5 0 010 1h-3a.5.5 0 01-.5-.5zm-2-3a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7a.5.5 0 01-.5-.5zm-2-3a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5z" clip-rule="evenodd">
+            </path></svg>
+       </button>
+    <div id="taskList">
+          <table id="taskTable">
+            <thead>
+            <tr>
+                <th>Task Name</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="taskTableBody"></tbody>
+           </table>
+</div>
+</div>
+</div>
+    <script src="./task.js" differ></script> 
+</body>
+</html>
